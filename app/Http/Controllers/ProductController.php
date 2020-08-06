@@ -41,7 +41,10 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {    
+
+
+        
         $data=request()->validate([
             'prod_name'=>'required',
             'prod_description'=>'required',
